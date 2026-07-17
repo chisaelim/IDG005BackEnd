@@ -39,6 +39,10 @@ class GoogleOAuthController extends Controller
             ]
         );
 
+        if ($user->status === 'DISABLED') {
+            return redirect($callback_url . '?error=account_disabled');
+        }
+
         $user->save();
 
         if (!$user->hasVerifiedEmail()) {
@@ -58,7 +62,7 @@ class GoogleOAuthController extends Controller
             return response(['message' => 'Invalid token.'], 403);
         }
 
-        $user->currentAccessToken()->delete(); // 34%7CHnurXGREDnIVa3vfh1nfRWikcetaG2JiQBv6vgZ1902e9852
+        $user->currentAccessToken()->delete();
 
         $token = $user->createToken('auth_token')->plainTextToken;
 
