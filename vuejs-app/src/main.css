@@ -37,7 +37,7 @@
 .nav-item p.chat-activity-icon {
     font-size: 1rem;
     position: absolute;
-    right: 10px;
+    right: 5px;
     bottom: 10px;
     animation: blinker 1.5s linear infinite;
 }
@@ -58,3 +58,57 @@
         /* Fully visible, optional if infinite is used */
     }
 }
+/*
+.sidebar-collapse.sidebar-mini .main-sidebar:hover .nav-item p.chat-name {
+    position: absolute;
+    left: 55px;
+    top: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 125px;
+    display: inline-block;
+}
+
+.sidebar-collapse.sidebar-mini .main-sidebar:hover .nav-item p.chat-datetime {
+    font-size: 0.75rem;
+    position: absolute;
+    right: 35px;
+    top: 2px;
+}
+
+.sidebar-collapse.sidebar-mini .main-sidebar:hover .nav-item p.chat-message {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 185px;
+    display: inline-block;
+}
+
+.sidebar-collapse.sidebar-mini
+    .main-sidebar:hover
+    .nav-item
+    p.chat-activity-icon {
+    font-size: 1rem;
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    animation: blinker 1.5s linear infinite;
+}
+
+.sidebar-collapse.sidebar-mini .main-sidebar:not(:hover) .nav-item p.chat-name,
+.sidebar-collapse.sidebar-mini
+    .main-sidebar:not(:hover)
+    .nav-item
+    p.chat-datetime,
+.sidebar-collapse.sidebar-mini
+    .main-sidebar:not(:hover)
+    .nav-item
+    p.chat-message,
+.sidebar-collapse.sidebar-mini
+    .main-sidebar:not(:hover)
+    .nav-item
+    p.chat-activity-icon {
+    display: none;
+} */
